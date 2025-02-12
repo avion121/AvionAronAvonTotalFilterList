@@ -3,12 +3,12 @@ import datetime
 
 # URLs of the filter lists
 FILTER_LIST_URLS = {
-    "Hagezi_Pro": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/pro.txt",
-    "StevenBlack_Fakenews_Gambling": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-gambling/hosts",
-    "OISD_Big_List": "https://big.oisd.nl",
-    "EasyList": "https://easylist.to/easylist/easylist.txt",
-    "EasyPrivacy": "https://easylist.to/easylist/easyprivacy.txt",
-    "1Hosts_Lite": "https://raw.githubusercontent.com/badmojr/1Hosts/master/Lite/adblock.txt"
+    "AvionAronAvonTotalFilterList_Hagezi_Pro": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/pro.txt",
+    "AvionAronAvonTotalFilterList_StevenBlack_Fakenews_Gambling": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-gambling/hosts",
+    "AvionAronAvonTotalFilterList_OISD_Big_List": "https://big.oisd.nl",
+    "AvionAronAvonTotalFilterList_EasyList": "https://easylist.to/easylist/easylist.txt",
+    "AvionAronAvonTotalFilterList_EasyPrivacy": "https://easylist.to/easylist/easyprivacy.txt",
+    "AvionAronAvonTotalFilterList_1Hosts_Lite": "https://raw.githubusercontent.com/badmojr/1Hosts/master/Lite/adblock.txt"
 }
 
 # Output file
