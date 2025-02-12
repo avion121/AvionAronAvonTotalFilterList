@@ -1,0 +1,43 @@
+name: AvionAronAvonTotalFilterList
+
+on:
+  schedule:
+    # Run daily at 10:30 AM IST (5:00 AM UTC)
+    - cron: '0 5 * * *'  # UTC time is 5:00 AM (10:30 AM IST)
+  workflow_dispatch:  # Allow manual triggering
+
+jobs:
+  compile:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Check out the repository
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GH_TOKEN }}  # Use the token for checkout
+
+      # Set up Python
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      # Install dependencies
+      - name: Install requests
+        run: pip install requests
+
+      # Run the Python script to compile filter lists
+      - name: Compile filter lists
+        run: python compile_filter_lists.py
+
+      # Commit the changes
+      - name: Commit changes
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          git add AvionAronAvonTotalFilterList.txt
+          git commit -m "Auto-update AvionAronAvonTotalFilterList [skip ci]" || echo "No changes to commit"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}  # Use the token for pushing
