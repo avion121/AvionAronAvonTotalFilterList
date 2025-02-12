@@ -1,4 +1,4 @@
-name: AvionAronAvonTotalFilterList
+name: Compile Filter Lists Daily
 
 on:
   schedule:
