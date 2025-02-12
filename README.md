@@ -73,7 +73,7 @@ Here’s what’s inside this repository:
 
 ## ⚠️ Important Caution ⚠️
 
-**Do not fork or copy this repository’s code without permission.**  
+
 This project is designed to help everyone, but forking or copying the code without understanding how it works can lead to issues. 
 If you want to use or modify the code, please reach out to the repository owner first.
 
