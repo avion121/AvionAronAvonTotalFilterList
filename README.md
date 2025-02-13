@@ -1,8 +1,7 @@
 # AvionAronAvonTotalFilterList 🛡️
 
-Welcome to the **AvionAronAvonTotalFilterList** repository! This project automatically compiles multiple ad-blocking and privacy filter lists into a single
-unified list named **AvionAronAvonTotalFilterList**. The list is updated daily and 
-can be used across browsers, extensions, Android, and iOS.
+Welcome to the **AvionAronAvonTotalFilterList** repository! This project automatically compiles multiple ad-blocking and privacy filter lists into a single unified list named **AvionAronAvonTotalFilterList**. 
+The list is updated daily and can be used across browsers, extensions, Android, and iOS.
 
 ---
 
@@ -39,17 +38,58 @@ You can use the compiled filter list in your favorite ad-blocking tool or browse
 ### For Browsers and Extensions:
 1. Add the following URL to your ad blocker:
 
-https://raw.githubusercontent.com/avion121/AvionAronAvonTotalFilterList/refs/heads/main/AvionAronAvonTotalFilterList.txt
+   `https://raw.githubusercontent.com/avion121/AvionAronAvonTotalFilterList/refs/heads/main/AvionAronAvonTotalFilterList.txt`
 
-### For Android (Private DNS):
-1. Go to **Settings** → **Network & Internet** → **Private DNS**.
-2. Select **Private DNS provider hostname**.
-3. Enter:dns.adguard.com
+### For Android:
 
-### For iOS (Custom DNS Profile):
-1. Use a tool like [DNSCloak](https://apps.apple.com/app/dnscloak-secure-dns-client/id1333531529) to create a custom DNS profile.
-2. Add the following DNS server:
-dns.adguard.com
+1. **AdGuard (Android)**
+   - Download AdGuard from the official website (since it's not available on the Google Play Store).
+   - Open AdGuard and go to **Settings**.
+   - Tap **Filters** and then **Custom filters**.
+   - Tap the "+" icon to add a new filter.
+   - Select **Add custom filter**.
+   - Paste the URL of the filter list:  
+     `https://raw.githubusercontent.com/avion121/AvionAronAvonTotalFilterList/refs/heads/main/AvionAronAvonTotalFilterList.txt`
+   - Tap **Save** and enable the filter.
+
+2. **Blokada (Android)**
+   - Download Blokada from the official website or F-Droid.
+   - Open Blokada and go to the **Filters** tab.
+   - Tap **Add new** at the bottom.
+   - Choose **Add URL** and paste the URL of the filter list.
+   - Tap **Add** to apply the filter.
+
+3. **DNS66 (Android)**
+   - Download DNS66 from F-Droid.
+   - Open DNS66 and go to **Filter Lists**.
+   - Tap the **+** icon and choose **Add custom filter**.
+   - Paste the URL of the filter list.
+   - Tap **OK** to save.
+
+### For iOS:
+
+1. **AdGuard (iOS)**
+   - Download AdGuard from the App Store.
+   - Open AdGuard and go to **Settings**.
+   - Tap **Filters** and then **Custom Filters**.
+   - Tap **Add Custom Filter** and paste the URL of the filter list:  
+     `https://raw.githubusercontent.com/avion121/AvionAronAvonTotalFilterList/refs/heads/main/AvionAronAvonTotalFilterList.txt`
+   - Save and enable the filter.
+
+2. **1Blocker (iOS)**
+   - Install 1Blocker from the App Store.
+   - Open 1Blocker and go to **Settings**.
+   - Tap **Custom Lists**.
+   - Add a new list by pasting the URL of the filter list.
+   - Enable the list for the changes to take effect.
+
+3. **AdGuard DNS (iOS)**
+   - If you want to apply the filter list via DNS:
+   - Open **Settings** on your iPhone/iPad.
+   - Go to **Wi-Fi** and tap the information icon next to the network you're connected to.
+   - Scroll down to **Configure DNS**, and set it to **Manual**.
+   - Add AdGuard's DNS servers or custom DNS servers that support the custom filter list.
+   - The filter list will be applied through DNS over HTTPS.
 
 ---
 
@@ -71,14 +111,6 @@ Here’s what’s inside this repository:
 
 ---
 
-## ⚠️ Important Caution ⚠️
-
-
-This project is designed to help everyone, but forking or copying the code without understanding how it works can lead to issues. 
-If you want to use or modify the code, please reach out to the repository owner first.
-
----
-
 ## Need Help or Have Suggestions?
 
 If you have any questions, suggestions, or run into issues:
@@ -90,8 +122,8 @@ If you have any questions, suggestions, or run into issues:
 
 ## License
 
-This project is open-source and licensed under the **MIT License**. Feel free to use the compiled filter list, 
-but please respect the license terms. See the [LICENSE](LICENSE) file for details.
+This project is open-source and licensed under the **MIT License**. 
+Feel free to use the compiled filter list, but please respect the license terms. See the [LICENSE](LICENSE) file for details.
 
 ---
 
